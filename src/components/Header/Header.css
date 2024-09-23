@@ -1,0 +1,33 @@
+.header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -19px 137px 58px 78px rgba(0,0,0,0.53);
+-webkit-box-shadow: -19px 137px 58px 78px rgba(0,0,0,0.53);
+-moz-box-shadow: -19px 137px 58px 78px rgba(0,0,0,0.53);
+  }
+.text-section h1{
+    margin-bottom: 10px;
+}
+  .header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s all;
+    font-weight: 600;
+  }
+  
+  .header a:hover {
+    text-decoration: underline;
+    color: rgb(9, 205, 240);
+    
+  }
+  
