@@ -5,9 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: -19px 137px 58px 78px rgba(0,0,0,0.53);
--webkit-box-shadow: -19px 137px 58px 78px rgba(0,0,0,0.53);
--moz-box-shadow: -19px 137px 58px 78px rgba(0,0,0,0.53);
+    box-shadow: 1px 11px 46px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 11px 46px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 11px 46px 0px rgba(0,0,0,0.75);
   }
 .text-section h1{
     margin-bottom: 10px;
