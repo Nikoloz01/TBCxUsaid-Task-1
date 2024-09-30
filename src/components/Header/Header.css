@@ -30,4 +30,16 @@
     color: rgb(9, 205, 240);
     
   }
+
+@keyframes flash {
+  50% {
+    color: #007bff;
+  }
+}
+
+.nav-item.assignment3 {
+  animation: flash 1s infinite;
+  font-weight: bold;
+}
+
   

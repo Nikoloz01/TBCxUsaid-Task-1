@@ -1,0 +1,41 @@
+.about-page {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .about-page h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-page p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+  }
+  
+  .mission {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .mission h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .mission p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
