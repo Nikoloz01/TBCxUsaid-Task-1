@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Content.css';
 import Product from '../Product/Product';
+import useDebounce from '../../hooks/usedebounce';
 
 function Content() {
   const [products, setProducts] = useState([]);
   const [sortOrder, setSortOrder] = useState('asc');
   const [searchQuery, setSearchQuery] = useState('');
+
+  const debouncedSearchQuery = useDebounce(searchQuery, 300);
 
   const fetchProducts = (query, order) => {
     const searchUrl = query
@@ -26,10 +29,9 @@ function Content() {
       });
   };
 
-  
   useEffect(() => {
-    fetchProducts(searchQuery, sortOrder);
-  }, [sortOrder, searchQuery]); 
+    fetchProducts(debouncedSearchQuery, sortOrder);
+  }, [sortOrder, debouncedSearchQuery]);
 
   const handleSortChange = (e) => {
     setSortOrder(e.target.value);
@@ -63,7 +65,7 @@ function Content() {
         {products.length > 0 ? (
           products.map((product) => (
             <Product
-              key={product.id} 
+              key={product.id}
               title={product.title}
               description={product.description}
               image={product.image}
